@@ -1,0 +1,6 @@
+# Dados gerados em tempo de execução (Fase 1)
+fase1-arquivo/dados/*.txt
+
+# Configuração local de credenciais
+*.env
+.env
