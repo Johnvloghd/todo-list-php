@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f2f4f7;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    margin: 0 0 4px;
+    color: #2c3e50;
+}
+
+.subtitulo {
+    margin: 0 0 20px;
+    color: #7f8c8d;
+    font-size: 14px;
+}
+
+.form-nova-tarefa {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.form-nova-tarefa input[type="text"] {
+    flex: 1;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.form-nova-tarefa button {
+    background: #2ecc71;
+    color: #fff;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.form-nova-tarefa button:hover {
+    background: #27ae60;
+}
+
+.vazio {
+    color: #95a5a6;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.lista-tarefas {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista-tarefas li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 12px 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.lista-tarefas li.concluida .titulo-tarefa {
+    text-decoration: line-through;
+    color: #95a5a6;
+}
+
+.titulo-tarefa {
+    flex: 1;
+    font-size: 15px;
+    color: #2c3e50;
+}
+
+.status-badge {
+    font-size: 12px;
+    padding: 3px 10px;
+    border-radius: 999px;
+    white-space: nowrap;
+}
+
+.badge-pendente {
+    background: #fdebd0;
+    color: #b9770e;
+}
+
+.badge-concluida {
+    background: #d5f5e3;
+    color: #1e8449;
+}
+
+.acoes {
+    display: flex;
+    gap: 6px;
+}
+
+.form-inline {
+    display: inline;
+}
+
+.btn-status,
+.btn-excluir {
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.btn-status {
+    background: #3498db;
+}
+
+.btn-status:hover {
+    background: #2980b9;
+}
+
+.btn-excluir {
+    background: #e74c3c;
+}
+
+.btn-excluir:hover {
+    background: #c0392b;
+}
